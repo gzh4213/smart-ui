@@ -1,10 +1,10 @@
 <template>
-  <button class="t-btn">SFC Button</button>
+  <button class="t-btn">S Button</button>
 </template>
 
 <script lang="ts">
 export default {
-  name: "SFCButton",
+  name: "SButton",
 };
 
 </script>

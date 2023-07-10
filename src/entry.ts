@@ -1,6 +1,7 @@
 import { App } from "vue";
 import MyButton from "./button";
 import SFCButton from "./SFCButton.vue";
+import SButton from "./SButton.vue";
 import JSXButton from "./JSXButton";
 
 // 导出单独组件
@@ -13,5 +14,6 @@ export default {
     app.component(MyButton.name, MyButton);
     app.component(SFCButton.name, SFCButton);
     app.component(JSXButton.name, JSXButton);
+    app.component(SButton.name, SButton);
   }
 };

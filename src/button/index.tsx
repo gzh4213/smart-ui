@@ -1,5 +1,5 @@
 import { defineComponent,PropType,toRefs} from "vue";
-import 'uno.css'
+// import 'virtual:uno.css'
 export default defineComponent({
   name: "MyButton",
   setup(props, {slots}) {

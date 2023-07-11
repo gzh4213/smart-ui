@@ -1,10 +1,11 @@
-import { defineComponent,PropType,toRefs} from "vue";
+import { defineComponent, PropType, toRefs } from 'vue';
 // import 'virtual:uno.css'
 export default defineComponent({
-  name: "MyButton",
-  setup(props, {slots}) {
-    return () => <button 
-      class={`
+  name: 'MyButton',
+  setup(props, { slots }) {
+    return () => (
+      <button
+        class={`
       py-2 
       px-4 
       font-semibold 
@@ -16,8 +17,9 @@ export default defineComponent({
       border-none 
       cursor-pointer 
       `}
-        > 
-        {slots.default ? slots.default() : ''}
-     </button>
+      >
+              {slots.default ? slots.default() : ''}   {' '}
+      </button>
+    );
   }
 });

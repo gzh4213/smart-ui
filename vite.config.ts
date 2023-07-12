@@ -1,21 +1,22 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { resolve } from 'path'
-import { presetUno, presetAttributify, presetIcons } from "unocss";
-import Unocss from "unocss/vite";
+import { presetUno, presetAttributify, presetIcons } from 'unocss'
+import Unocss from 'unocss/vite'
+import viteEslint from 'vite-plugin-eslint'
 
 // console.log(resolve(__dirname, './src/index.ts'), 'ts')
 // https://vitejs.dev/config/
 const rollupOptions = {
-  external: ["vue", "vue-router"],
+  external: ['vue', 'vue-router'],
   output: {
     exports: 'named',
     globals: {
-      vue: "Vue",
-    },
-  },
-};
+      vue: 'Vue'
+    }
+  }
+}
 
 export default defineConfig({
   plugins: [
@@ -27,21 +28,22 @@ export default defineConfig({
     }),
     // 添加UnoCSS插件
     Unocss({
-      presets: [presetUno(), presetAttributify(), presetIcons()],
-    })
+      presets: [presetUno(), presetAttributify(), presetIcons()]
+    }),
+    viteEslint()
   ],
 
   // 添加库模式配置
   build: {
     rollupOptions,
-    minify:false,
+    minify: false,
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, './src/entry.ts'),
-      name: "SmartyUI",
-      fileName: "smarty-ui",
+      name: 'SmartyUI',
+      fileName: 'smarty-ui',
       // 导出模块格式
-      formats: ["es", "umd","iife"],
-    },
-  },
-});
+      formats: ['es', 'umd', 'iife']
+    }
+  }
+})

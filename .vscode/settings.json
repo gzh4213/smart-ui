@@ -1,6 +1,9 @@
 {
-  "editor.formatOnSave": true,
-  "eslint.format.enable": true,
+  // "editor.formatOnSave": true,
+  // "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   // "prettier.configPath": ".prettierrc.json",
   // "[typescript]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"

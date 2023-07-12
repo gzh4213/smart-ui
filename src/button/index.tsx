@@ -1,8 +1,8 @@
-import { defineComponent, PropType, toRefs } from 'vue';
+import { defineComponent, PropType, toRefs } from 'vue'
 // import 'virtual:uno.css'
 export default defineComponent({
   name: 'MyButton',
-  setup(props, { slots }) {
+  setup (props, { slots }) {
     return () => (
       <button
         class={`
@@ -20,6 +20,6 @@ export default defineComponent({
       >
               {slots.default ? slots.default() : ''}   {' '}
       </button>
-    );
+    )
   }
-});
+})

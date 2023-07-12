@@ -11,7 +11,7 @@
     "docs:serve": "vitepress serve docs",
     "register:components": "vitepress-rc",
     "prepare": "husky install",
-    "lint": "eslint --fix --ext .ts,.vue ."
+    "lint": "eslint --fix --ext .ts,.vue"
   },
   "keywords": [],
   "author": "",

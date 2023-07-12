@@ -1,4 +1,4 @@
-import { defineComponent, PropType, toRefs } from 'vue'
+import { defineComponent } from 'vue'
 // import 'virtual:uno.css'
 export default defineComponent({
   name: 'MyButton',
@@ -18,7 +18,7 @@ export default defineComponent({
       cursor-pointer 
       `}
       >
-              {slots.default ? slots.default() : ''}   {' '}
+        {slots.default ? slots.default() : ''}  {' '}
       </button>
     )
   }

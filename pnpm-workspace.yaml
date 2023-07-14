@@ -1,0 +1,5 @@
+packages:
+  # ui库、工具库等相关库
+  - packages/**
+  # 组件库文档
+  - docs

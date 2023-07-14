@@ -9,7 +9,7 @@
     "docs:serve": "vitepress serve docs",
     "register:components": "vitepress-rc",
     "lint": "eslint --fix --ext .ts,.vue",
-    "preinstall": "echo 'Running preinstall'"
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [],
   "author": "",

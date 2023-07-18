@@ -1,12 +1,17 @@
 <template>
-  <button class="t-btn">
-    SFC Button
+  <button v-if="a" class="t-btn">
+    S Button
   </button>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'SFCButton'
+  name: 'SButton',
+  data () {
+    return {
+      a: 'a'
+    }
+  }
 }
 
 </script>

@@ -1,4 +1,5 @@
 # Button 按钮
+
 常用操作按钮
 
 ## 基础用法
@@ -10,7 +11,7 @@
 ```vue
 <template>
  <div style="margin-bottom:20px;">
-  <SButton color="blue">主要按钮</SButton>
+  <SFCButton color="blue">主要按钮</SFCButton>
   <SButton color="green">绿色按钮</SButton>
   <SButton color="gray">灰色按钮</SButton>
   <SButton color="yellow">黄色按钮</SButton>
@@ -45,6 +46,7 @@
  </div>
 </template>
 ```
+
 :::
 
 ## 图标按钮

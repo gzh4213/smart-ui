@@ -4,9 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docs:dev": "pnpm register:components && vitepress dev",
+    "docs:build": "pnpm register:components && vitepress build",
+    "docs:serve": "vitepress serve",
+    "register:components": "vitepress-rc --docsDir .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "guozhen",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-beta.3",
+    "vitepress-theme-demoblock": "^3.0.1"
+  },
+  "dependencies": {
+    "@tf/tf-c-ui": "workspace:^"
+  }
 }

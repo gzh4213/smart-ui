@@ -1,5 +1,4 @@
 /* eslint disabled */
-console.log(process.env)
 // husky install
 if (!(process.env.npm_execpath || '').includes('pnpm')) {
   console.log('请使用pnpm安装依赖！！！')

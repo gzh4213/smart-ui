@@ -90,9 +90,9 @@ importers:
 
   docs:
     dependencies:
-      '@tf/tf-c-ui':
+      gzh4213-ui:
         specifier: workspace:^
-        version: link:../packages/tf-c-ui
+        version: link:../packages/gzh4213-ui
     devDependencies:
       vitepress:
         specifier: 1.0.0-beta.3
@@ -101,14 +101,11 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(@algolia/client-search@4.18.0)(@types/node@20.4.1)(search-insights@2.6.0)(terser@5.19.0)
 
-  packages/tf-c-ui:
+  packages/gzh4213-ui:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.2.3
         version: 4.2.3(vite@4.4.4)(vue@3.3.4)
-      '@vitejs/plugin-vue2':
-        specifier: ^2.2.0
-        version: 2.2.0(vite@4.4.4)(vue@3.3.4)
       esno:
         specifier: ^0.17.0
         version: 0.17.0
@@ -124,6 +121,8 @@ importers:
       vite-plugin-vue-setup-extend-plus:
         specifier: ^0.1.0
         version: 0.1.0
+
+  packages/gzh4213-ui/dist/Button: {}
 
 packages:
 
@@ -1872,17 +1871,6 @@ packages:
       vue: 3.3.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@vitejs/plugin-vue2@2.2.0(vite@4.4.4)(vue@3.3.4):
-    resolution: {integrity: sha512-1km7zEuZ/9QRPvzXSjikbTYGQPG86Mq1baktpC4sXqsXlb02HQKfi+fl8qVS703JM7cgm24Ga9j+RwKmvFn90A==}
-    engines: {node: ^14.18.0 || >= 16.0.0}
-    peerDependencies:
-      vite: ^3.0.0 || ^4.0.0
-      vue: ^2.7.0-0
-    dependencies:
-      vite: 4.4.4(@types/node@20.4.1)(terser@5.19.0)
-      vue: 3.3.4
     dev: true
 
   /@vitejs/plugin-vue@4.2.3(vite@4.4.4)(vue@3.3.4):

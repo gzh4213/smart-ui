@@ -18,6 +18,6 @@
     "vitepress-theme-demoblock": "^3.0.1"
   },
   "dependencies": {
-    "@tf/tf-c-ui": "workspace:^"
+    "gzh4213-ui": "workspace:^"
   }
 }

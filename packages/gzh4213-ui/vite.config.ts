@@ -50,8 +50,8 @@ export const config = {
     outDir: 'dist',
     lib: {
       entry: resolve(__dirname, './src/entry.ts'),
-      name: 'SmartyUI',
-      fileName: 'smarty-ui',
+      name: 'Gzh4213UI',
+      fileName: 'gzh4213-ui',
       // 导出模块格式
       formats: ['es', 'umd', 'iife']
     }

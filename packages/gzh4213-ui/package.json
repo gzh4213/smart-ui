@@ -1,8 +1,8 @@
 {
-  "name": "@tf/tf-c-ui",
+  "name": "gzh4213-ui",
   "version": "0.1.0",
   "description": "",
-  "main": "/dist/smarty-ui.mjs",
+  "main": "/dist/gzh4213-ui.mjs",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:components",
@@ -15,7 +15,6 @@
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "@vitejs/plugin-vue2": "^2.2.0",
     "esno": "^0.17.0",
     "fs-extra": "^11.1.1",
     "path": "^0.12.7",

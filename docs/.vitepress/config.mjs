@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
-import vueJsx from "@vitejs/plugin-vue-jsx";
+// import vueJsx from "@vitejs/plugin-vue-jsx";
 const sidebar = {
   '/': [
     { text: '快速开始', link: '/' },
@@ -26,7 +26,7 @@ const configs = {
     plugins: [
       demoblockVitePlugin(), 
       // 添加JSX插件
-      vueJsx()
+      // vueJsx()
     ]
   }
 }

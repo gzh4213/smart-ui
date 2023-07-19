@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "vitepress build",
     "docs:dev": "pnpm register:components && vitepress dev",
     "docs:build": "pnpm register:components && vitepress build",
     "docs:serve": "vitepress serve",
